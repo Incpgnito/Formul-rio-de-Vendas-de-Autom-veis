@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Formuláro</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+        <div class="container">
+            
+                <div class="header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/744/744465.png" title="logotipo" id="logo">
+                    <h1>Venda fácil seu carro!</h1>
+                </div>
+    
+                <div class="form-container">
+                    <h1 class="form-title">Cadastre-se seu veículo para vender mais rápido!</h1>
+                    <form>
+                        <p>
+                            Descreva as características e marque os opicionais que ele possui:
+                        </p>
+                        <div class="box-input">
+                            <label for="title">Título do Anúncio:<span class="required-field"></span></label>
+                            <input type="text" name="title" id="title" class="block" placeholder="Um título pra anunciar seu carro..." minlength="1" maxlenght="30" required/>
+                        </div>
+                        <div class="box-input">
+                            <label for="title">Preço:<span class="required-field"></span></label>
+                            <input type="number" name="price" id="title" class="block"required/>
+                        </div>
+                        <div class="box-input">
+                            <label for="title">Modelo:<span class="required-field"></span></label>
+                            <input type="text" name="brand" id="title" class="block" placeholder="Digite o modelo do seu veículo..." minlength="1" maxlenght="30" required/>
+                        </div>
+                        <div class="box-input">
+                            <label for="title">Data:<span class="required-field"></span></label>
+                            <input type="date" name="date" id="title" class="block"/>
+                        </div>
+
+                        <div class="transmission-clutch">
+                            <p>Escolha o tipo de transmissao do seu carro:</p>
+                            <input type="radio" id="auto" name="gear"/>
+                            <label for="manual">Manual</label>
+                            <input type="radio" id="auto" name="gear"/>
+                            <label for="manual">Automático</label>
+                            <label name=""></label>
+                        </div>
+                        <div class="optional-box">
+                            <p>Opicionais:</p>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="airbag" name="optional[]" value="airbag">
+                                    <label label for="airbag">Airbag</label>
+                                </li>
+                                
+                            </ul>
+                            
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="leather-seats" name="optional[]" value="leather-seats">
+                                    <label for="leather-seats">Bancos de Couro</label>
+                                </li>
+                                
+                            </ul>
+                                
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="abs" name="optional[]" value="abs">
+                                    <label for="abs">ABS</label>
+                                </li>
+                                
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="hydraulics-steering" name="optional[]" value="hydraulic-steering">
+                                    <label for="hydrauliC-steering">Direção Hidráulica</label>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div>
+                            <p>Adicione as fotos do seu carro abaixo:</p>
+                            <input type="file" value="Enviar" multiple accept="image/png, image/jpg" id="images" name="images" required/>
+                        </div>
+                        <div class="submit-reset-div">
+                            <input type="submit" class="btn" value="Enviar"/>
+                            <input type="reset" class="btn" value="Limpar"/>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </form>
+</body>
+</html>

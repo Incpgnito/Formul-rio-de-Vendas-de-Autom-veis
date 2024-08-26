@@ -1,0 +1,89 @@
+* { /* Todo o Site. */
+    margin:0px;
+    padding:0px;
+}
+
+
+body{
+    color:rgb(23, 23, 23);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+    height: 700px;
+}
+
+#logo{
+    height:100px;
+    padding:20px;
+}
+
+
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"],input[type="number"],input[type="date"],input[type="file"]{
+    width: 400px;
+}
+
+/* page height */
+
+.header{
+    height: 160px;
+    padding: 20px;
+    background-color: #7032f5;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title{ 
+    padding: 5px;
+    border-bottom: 2px solid #7032f5;
+    margin-bottom: 10px;
+}
+
+.form-container{
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    width:60%;
+    margin: 60%;
+    margin:0 auto;
+    position: relative;
+    top:-70px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.optional-box{
+    display:inline-block;
+    margin: 0 10px 10px 0;
+
+}
+
+.btn{
+    background-color:#7032f5;
+    color: white;
+    border-radius:50px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:#491fa5;
+    color: white;
+    border-radius:50px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.submit-reset-div{
+    display: flex;
+    justify-content: center;
+}
